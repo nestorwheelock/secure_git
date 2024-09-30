@@ -1,0 +1,6 @@
+# Sensitive files
+.env
+node_modules/
+*.log
+*.key
+*.pem
