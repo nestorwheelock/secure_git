@@ -40,7 +40,7 @@ Clone this repository and make the script executable:
 ```bash
 git clone git@github.com:nestorwheelock/secure_git.git
 cd secure_git
-chmod +x secure_git_setup.sh
+chmod +x secure_git.sh
 ```
 
 ## Usage
@@ -50,7 +50,7 @@ chmod +x secure_git_setup.sh
 To run the security checks on a single Git repository, navigate to the repository directory and execute the script:
 
 ```bash
-./secure_git_setup.sh /path/to/your/repo
+./secure_git.sh /path/to/your/repo
 ```
 
 ### Recursive Scan of Multiple Repositories
@@ -58,7 +58,7 @@ To run the security checks on a single Git repository, navigate to the repositor
 If you have a directory that contains multiple Git repositories (or nested repositories), you can run the script recursively:
 
 ```bash
-./secure_git_setup.sh /path/to/directory-containing-repos
+./secure_git.sh /path/to/directory-containing-repos
 ```
 
 The script will automatically find all Git repositories in the specified directory and perform security checks on each one.
@@ -116,10 +116,10 @@ The script logs its actions in a **pretty output** format with timestamps and em
 
 ## Log Output
 
-All operations are logged in a file named `secure_git_setup.log`. After running the script, you can review the log file for details:
+All operations are logged in a file named `secure_git.log`. After running the script, you can review the log file for details:
 
 ```bash
-cat secure_git_setup.log
+cat secure_git.log
 ```
 
 ## Customizing the Script
